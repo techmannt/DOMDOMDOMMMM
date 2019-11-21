@@ -42,7 +42,6 @@ window.addEventListener('DOMContentLoaded', function () {
     div.addEventListener("dblclick", function(e) {
       if ((div.id % 2) === 0) {  // If the square clicked on is EVEN, then remove the square after the clicked square.
         let element = document.getElementById(div.id);
-        let allSquaresArray = document.querySelectorAll('.divSquare');
         let newDivId = div.nextSibling;
 
         if (newDivId !== null) {  // If we're not at the end of the row of squares, then we can safely remove it.
@@ -52,7 +51,6 @@ window.addEventListener('DOMContentLoaded', function () {
         }
       } else {  // If the square clicked on is ODD, then remove the square before the clicked square.
         let element = document.getElementById(div.id);
-        let allSquaresArray = document.querySelectorAll('.divSquare');
         let newDivId = div.previousSibling;
 
         if (newDivId !== null) {  // If we're not at the beginning of the row of squares, then we can safely remove it.
