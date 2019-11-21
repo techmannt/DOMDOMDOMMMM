@@ -1,0 +1,23 @@
+h2 {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.button {
+  display: block;
+}
+
+.divSquare {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
